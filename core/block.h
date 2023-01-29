@@ -25,8 +25,8 @@ typedef struct _Block {
     SHAPE_COLOR_INDEX_INT_T colorIndex;
 } Block; /* 1 byte */
 
-// a solid block by default with color index 0
-Block *block_new(void);
+// a solid block by default with color index 0 ...
+Block* block_new(void);
 
 // an air block is a block with color index 255
 Block *block_new_air(void);
