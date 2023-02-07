@@ -435,6 +435,9 @@ Shape *shape_make_copy(Shape *origin) {
         s->fullname = string_new_copy(origin->fullname);
     }
 
+    // set the same parent as origin
+    transform_set_parent(s, transform_get_parent(origin), true);
+
     return s;
 }
 
